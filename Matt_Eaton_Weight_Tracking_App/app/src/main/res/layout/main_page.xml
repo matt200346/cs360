@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="false"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:onClick="onMenuButtonClick"/>
+
+    <TextView
+        android:id="@+id/goalTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="GOAL:"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goalTextView"
+        app:layout_constraintEnd_toStartOf="@+id/goalTextView"
+        app:layout_constraintTop_toTopOf="@+id/goalTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/goalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/weightTableHeader"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="Weight Log"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/deleteButtonHeader"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="Delete?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/weightHeader"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="Weight"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dateHeader"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/editButtonHeader"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="Edit"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/deleteButton1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_delete"
+                android:text="x"
+                android:textSize="11sp"
+                android:onClick="onDeleteButton1Click"/>
+
+            <TextView
+                android:id="@+id/weight1"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/editButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="edit"
+                android:textSize="11sp"
+                android:onClick="onEditButton1Click"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/deleteButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_delete"
+                android:text="x"
+                android:textSize="11sp"
+                android:onClick="onDeleteButton2Click"/>
+
+            <TextView
+                android:id="@+id/weight2"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/editButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="edit"
+                android:textSize="11sp"
+                android:onClick="onEditButton2Click"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/deleteButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_delete"
+                android:text="x"
+                android:textSize="11sp"
+                android:onClick="onDeleteButton3Click"/>
+
+            <TextView
+                android:id="@+id/weight3"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/editButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="edit"
+                android:textSize="11sp"
+                android:onClick="onEditButton3Click"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/deleteButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_delete"
+                android:text="x"
+                android:textSize="11sp"
+                android:onClick="onDeleteButton4Click"/>
+
+            <TextView
+                android:id="@+id/weight4"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date4"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/editButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="edit"
+                android:textSize="11sp"
+                android:onClick="onEditButton4Click"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/deleteButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_delete"
+                android:text="x"
+                android:textSize="11sp"
+                android:onClick="onDeleteButton5Click"/>
+
+            <TextView
+                android:id="@+id/weight5"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date5"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/editButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:src="@android:drawable/ic_menu_edit"
+                android:text="edit"
+                android:textSize="11sp"
+                android:onClick="onEditButton5Click"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/newWeightButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="83dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="New Weight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onNewWeightClick"/>
+
+    <TextView
+        android:id="@+id/goalCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/newWeightButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goalTitleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

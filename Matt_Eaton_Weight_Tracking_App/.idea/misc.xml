@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.322" />
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/layout/activity_main.xml" value="0.5359375" />
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/layout/login_screen.xml" value="0.55" />
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/layout/main_page.xml" value="0.5489583333333333" />
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/layout/new_weight.xml" value="0.41510416666666666" />
+        <entry key="..\:/Users/narut/AndroidStudioProjects/Matt_Eaton_Weight_Tracking_App/app/src/main/res/layout/user_settings_screen.xml" value="0.49375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5489583333333333" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
